@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .visibility{
+    color: white;
+}
+#book-room{
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+.fo{
+  font-size: 21px;
+    font-style: italic;
+    color: black;
+}
+.calendar{
+    padding: 5px;
+    width: 300px;
+}
+.plus-btn{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+}
+.minus-btn{
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+#adult, #kids{
+    padding: 7px;
+    width: 50px;
+}
+.mt50{
+        margin-top: 50px;
+}
+#heading{
+  font-size: 25px;
+  color: grey;
+  font-style: normal;
+}
+#sub-heading{
+  font-size: 18px;
+  font-style: italic;
+ color: black;
+}
+
+  header{
+      background-color: black;
+      z-index: 3;
+  }
+  #navbar {
+    overflow: hidden;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  header ul{
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px 100px;
+  }
+  header ul li a{
+      color: white;
+  }
+
+  #book-room:hover{
+      color: grey;
+      background-color:white;
+  }
+  header ul li a:hover{
+      cursor: pointer;
+      color: grey;
+      transition: 0.3s ease-in;
+  }
+  
+  .container{
+      text-align: center;
+      padding: 50px 100px;
+      position: relative;
+  }
+  .container .side-links{
+    position: fixed;
+    right: 23px;
+    padding: 10px;
+    top: 100px;
+    background-color: white;
+  }
+  .chat-box{
+    position: fixed;
+    top: 590px;
+    left: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .chat-box span i{
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+  }
+  .side-links ul{
+    list-style: none;
+  }
+  .side-links ul li{
+    padding: 10px 0;
+  }
+  .intro h1{
+      font-size: 40px;
+  }
+  .intro h3{
+      color: grey;
+      font-size: 20px;
+  }
+  .intro  p{
+    padding: 15px 0;
+  }
+  .intro img{
+    background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 600px;
+      width: 100%;
+      margin-top: 40px;
+  }
+  .input-details{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-left: 10px;
+  }
+  .input-details .input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 40px;
+  }
+  .input-details .input label{
+    text-align: left;
+    font-size: 13px;
+  }
+  .search-btn{
+      border: transparent;
+      cursor: pointer;
+      text-align: center;
+      font-size: 12px;
+      background-color: black;
+      color: white;
+      height: 32px;
+    width: 200px;
+    margin-top: 16px;
+  }
+  
+  .about p{
+      padding: 30px 299px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: grey;
+      font-style: italic;
+  }
+
+  .our-rooms{
+      background-image: url(assets/img-2.jpg);
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative; 
+  }
+  .our-rooms .box{
+    position: absolute;
+    width: 450px;
+    right: 342px;
+    top: 50px;
+    background-color: white;
+    padding: 70px 50px;
+    border-radius: 3px;
+  }
+  .our-rooms .box h2{
+      font-size: 25px;
+      margin-bottom: 20px;
+  }
+  .our-rooms .box p{
+      color: grey;
+      font-size: 17px;
+      padding: 0 35px;
+    line-height: 1.5;
+    margin: 14px 0;
+    font-style: italic;
+  }
+  .book-room{
+      padding: 10px 25px;
+      margin-top: 50px;
+      background: transparent;
+      border: solid 1px black;
+  }
+  .book-room:hover{
+      color: white;
+      background-color: black;
+      cursor: pointer;
+      transition: 0.4s;
+  }
+
+  .our-services h6{
+      font-size: 25px;
+      color: grey; 
+  }
+  .our-services .services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .services .service{
+      line-height: 1.5;
+  }
+  .service h5{
+      font-size: 18px;
+  }
+  .service p{
+    padding: 15px 70px;
+    font-style: italic;
+    color: grey;
+  }
+  .gallery h1{
+      font-size: 25px;
+      color: grey;
+  }
+  .gallery .pics ul{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .gallery .pics ul li{
+    width: calc((100% / 3) - 1rem);
+  }
+  .gallery .pics ul li img{
+      width: 100%;
+      height: 600px;
+      margin: 0 10px;
+  }
+  #middle{
+      margin: 0 10px;
+  }
+  .gallery .pics ul li:hover{
+    background-color: white;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .guest-review{
+        background-image: url(assets/guest.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+  }
+.contact-us{
+    background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+.contact-us p{
+    font-size: 25px;
+    color: grey;
+}
+.contact-us .links ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 240px;
+}
+.contact-us .links ul li, .contact-us .links ul li a{
+    font-size: 18px;
+    color: grey;
+}
+.form-holder{
+    display: flex;
+    flex-direction: column;
+    /* width: 60%; */
+    margin: 50px 380px;
+}
+.form-group{
+    text-align: left;
+}
+.mr5{
+    margin-right: 10px;
+}
+.form-group input{
+    padding:  8px 102px 8px 1px;
+    margin-bottom: 10px;
+    position: relative;
+    /* width: 50%; */
+}
+.full input{
+    width: 100%;
+}
+.form-holder textarea{
+    padding: 3px 0 70px 2px;
+}
+.form-holder .msg-btn{
+    border: transparent;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    height: 40px;
+  margin-top: 16px;
+}
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  font-size: 14px;
+}
+footer a{
+  color: white;
+  text-decoration: underline;
+}
